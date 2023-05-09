@@ -1,0 +1,1127 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all .2s linear;
+}
+
+/* for white BG */
+.logo{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(100%) hue-rotate(580deg);
+}
+
+/* for black BG */
+.navbarlogo {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(100%) hue-rotate(40deg);
+  }
+  
+
+  
+.updatebtn:hover{
+background-color: rgb(170, 13, 13);
+/* word-spacing: 22px; */
+}
+
+  
+  
+.signuplogin{
+    margin-left: 20%;
+        display: flex;
+        max-width: 13%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+}
+.signuplogin a{
+text-decoration: none;
+background-color:rgba(249, 249, 255, 0.5);
+color: #000;
+padding: 15px;
+}
+.signupbtn{
+    margin-left: 40%;
+    border: 2px solid white;  
+}
+.adminlogin{
+        display: flex;
+        margin-left: 58px;
+        max-width: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+}
+.adminlogin a{
+    text-decoration: none;
+    background-color:rgba(249, 249, 255, 0.5);
+    color: #000;
+    padding: 15px;
+    }
+.form-container{
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url('../public/images/loginbg2.png')no-repeat;
+  background-size: cover;
+  background-position: center;
+  perspective: 1000px;
+}
+.form-container form{
+  height: 450px;
+  width: 350px;
+  background: rgba(255, 255, 255, .1);
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  border-left: 1px solid rgba(255, 255, 255, .3);
+  backdrop-filter: blur(5px);
+  transform-style: preserve-3d;
+}
+.form-container form h3{
+  font-size: 30px;
+  padding: 30px 0;
+  color: #5c5a5a;
+  letter-spacing: 3px;
+}
+.form-container form i{
+  padding: 0 5px;
+  font-size: 20px;
+  color: #bbb;
+}
+.form-container form input{
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 82%;
+  background: rgba(0, 0, 0, .1);
+  color: rgba(255, 255, 255, .7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .3) inset;
+  font-size: 17px;
+  padding: 0 10px;
+  margin: 15px 0;
+  letter-spacing: 1px;
+}
+
+.form-container form input[type="submit"]{
+width: 90%;
+cursor: pointer;
+color: #5c5a5a;
+/* background: linear-gradient(90deg,deeppink,blueviolet); */
+background: linear-gradient(90deg,rgb(76, 234, 118),rgb(245, 245, 246));
+margin-top: 30px;
+border-radius: 50px;
+}
+
+.form-container form input[type="submit"]:hover{
+  letter-spacing: 4px;
+}
+
+/* form styling ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* new style for Loginsignup page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    /* background: #000; */
+  
+}
+.background{
+  background:url('../public/images/loginbg2.png')no-repeat;
+    background-position: center;
+    background-size:cover ;
+    height: 130vh;
+    
+    width: 100%;
+    filter: blur(10px);
+}
+
+
+
+
+
+
+.containerSL{
+    position: absolute;
+    left: 50%;
+    /* top: auto; */
+    transform: translate(-50%,-50%);
+    width: 75%;
+    height: 100vh;
+    margin-top: -30%;
+    background:url('../public/images/loginbg2.png')no-repeat;
+    background-position: center;
+    background-size:cover ;
+    border-radius: 20px;
+    overflow: hidden;
+    
+    
+}
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    color: #fff;
+
+    background: transparent;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+
+
+}
+.item .logo{
+    color: #e8378d;
+    font-size: 30px;
+
+}
+.text-item h2{
+    font-size: 40px;
+    line-height: 1;
+}
+.text-item p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.social-icon a i{
+    /* color: #fff; */
+    color: #e8378d;
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.social-icon a:hover i{
+    transform: scale(1.2);
+}
+.containerSL .login-section{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100vh;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.login-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.login-section .form-box.register{
+    transform: translateX(430px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
+}
+.login-section.active .form-box.register{
+    transform: translateX(0px);
+    transition-delay: .7s;
+}
+
+.login-section .form-box.login{
+    transform: translateX(0px);
+    transition: transform .6s ease;
+    transition-delay: 0.7s;
+}
+.login-section.active .form-box.login{
+    transform: translateX(430px);
+    transition-delay: 0s;
+}
+
+
+
+.login-section .form-box h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+.form-box .input-box{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid#fff;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+
+
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    pointer-events: none;
+    transition: .5s ease;
+
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+.input-box input:focus~ label,
+.input-box input:valid~ label{
+    top: -5px;
+}
+.input-box .signupbtn{
+    border: 2px solid red;
+}
+.remember-password{
+    font-size: 14px;
+    font-weight: 500;
+    margin: -15px 0 15px ;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-password label input{
+    accent-color: #fff;
+    margin-right: 3px;
+
+}
+.remember-password a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-password a:hover{
+    text-decoration: underline;
+}
+.create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+.create-account p a{
+    color: #fff;
+    font-weight: 600px;
+    text-decoration: none;
+}
+.create-account p a:hover{
+    text-decoration: underline;
+}
+
+/* indexjs header styling start from here */
+header{
+    min-height: 100vh;
+    max-height: auto;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('https://videos.hyatt.com/grand_hyatt_seattle_mast.mp4'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hidden {
+    display: none;
+  }
+  
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+.headertext {
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 82vh;
+    text-align: center;
+    color: #fff;   
+}
+.navbar{
+    min-height: 18vh;
+    max-height: auto;
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+  top: 0;
+    z-index: 999;
+    background: rgba(249, 249, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar li{
+    /* padding: 0px 10px 0 10px; */
+    margin-left: 30px;
+}
+.nav-link{
+  max-height: auto;
+  min-width: 100px;
+  max-width: auto;
+  text-align: center;
+  /* color: #86530a; */
+  text-decoration: none;
+  white-space: nowrap;
+  overflow:hidden;
+  font-size: 18px;
+
+  /* background: -webkit-linear-gradient(#211083, #ec2faa); */
+  background: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.navbar li :hover{
+    /* font-size: 18px; */
+    color: rgb(30, 27, 27);
+    /* background-color: rgba(11, 5, 5, 0.202); */
+}
+.nav-item{
+    border: 1px solid black;
+    background-color: rgba(249, 249, 255, 0.202);
+}
+/* accomodation_sec styling start */
+
+.richtext{
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.richtext > :nth-child(2){
+padding-bottom: 40px;
+}
+.richText {
+    font-size: 31px;
+    line-height: 1.62;
+    padding-bottom: 24px;
+    color: rgb(187, 16, 16);
+}
+.accomodation_sec{
+    min-height: 20vh;
+    max-height: auto;
+    background-color: #fff;
+    /* margin-top: 20vh; */
+    display: grid;
+    place-items: center;
+    margin-bottom: 60px;
+}
+.accomodation_sec_img{
+    /* min-height: 0vh; */
+    max-height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.accomodation_sec_img_1 {
+text-align: center;
+}
+
+.accomodation_img{
+    background-image: url("../public/images/Park-Hyatt-Bangkok.png");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 270px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+}
+.accomodation_img button{
+    margin-top: 80%;
+    width: 60%;
+    background: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+}
+
+
+
+
+/* royalfacilities styling sttart */
+
+
+
+.royalfacilities {
+    min-height: 100vh;
+    max-height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url("../public/images/Park-Hyatt-Bangkok.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    padding-bottom: 40px;
+  }
+  
+  .royalfacilities_sec {
+    max-height: auto;
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  .royalfacilities h1 {
+    margin-top: 15vh;
+  }
+  
+  .royalfacilities p {
+    margin-top: 0vh;
+  }
+  
+.facilities_items{
+    text-align: center;
+    margin: 0px 0 30px 0px
+}
+.facilities_item{
+    border: 1px solid #777777;
+    border-radius: 10px;
+    background-color: rgba(249, 249, 255, 0.102);
+    padding: 31px 40px 37px;
+    color: #fff;
+    
+}
+/* roomsplussuites styling start */
+
+.roomsplussuites{
+    height: 100vh;
+    background-color: #fff;
+    text-align: center;
+    padding: 0px;
+}
+.roomsplussuites h1{
+margin-top: 10vh;
+margin-bottom: 10vh;
+font-family: 'Courier New', Courier, monospace;
+color: red;
+
+}
+.roomsplussuites img{
+height: 100vh;
+width: 98.7vw;
+
+}
+.roomsplussuites_div1{
+    min-height: 60vh;
+    max-height: auto;
+    text-align: start;
+display: flex;
+}
+.div1_1 img{
+height: 60vh;
+width: 100%;
+}
+.div1_2 button{
+width: 210px;
+}
+.div1_2 p{
+margin-top: 30px;
+}
+/* roomsplussuites_div2 styling */
+.roomsplussuites_div2{
+    height: 80vh;
+    display: flex;
+    margin-bottom: 15%;
+}
+.div2_1{
+background-color: #777777;
+height: 80vh;
+margin-left: 10%;
+width: 38.7%;
+}
+.div2_1 img{
+   height: 80vh;
+   width: 77%;
+   margin-top: 5%;
+   margin-right:15% ;
+    }
+.div2_2 img{
+    height: 85vh;
+    width: 100%;
+    margin-left: -30%;
+    margin-top: -10%;
+}
+
+/* ourhotel styling start from here */
+
+.ourhotel{
+    min-height: 50vh;
+    max-height: auto;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 89%;
+}
+.ourhotel h1{
+text-align: center;
+color: red;
+}
+.ourhotel p{
+    text-align: center;
+}
+.ourhotel_div{
+    display: flex;
+    margin-top: 5%;
+}
+.ourhotel_div1{
+padding: 31px 40px 77px;
+text-align: start;
+color: #535151;
+z-index: 999;
+background-color: #fff;
+
+}
+.ourhotel_div2{
+    display: flex;
+    margin-top: 5%;
+}
+.ourhotel_div1_1 img{
+    height: 100vh;
+    width: 120%;
+    margin-left: -20%;
+    margin-top: -16%;
+    }
+    .ourhotel_div2_1 img{
+        width: 115%;
+        height: 87vh;
+    }
+    .ourhotel_div2_2{
+        height: 70vh;
+        /* margin-top: 10vh; */
+        text-align: start;
+        background-color: #fff; 
+        padding: 31px 40px 77px;   
+        margin-left: -8%;
+        width: 100vw;
+        margin-top: 8%;
+    }
+   
+    .ourhotel_div3{
+        display: flex;
+        margin-top: 15%;
+    }
+    .ourhotel_div3_1{
+    padding: 31px 40px 77px;
+    text-align: start;
+    color: #535151;
+    z-index: 999;
+    background-color: #fff;
+    
+    }  
+    .ourhotel_div3_2 img{
+        height: 100vh;
+        width: 120%;
+        margin-left: -20%;
+        margin-top: -16%;
+        }  
+        .div4 h1{
+text-align: center;
+color: red;
+margin:40px 40px ;
+        }
+/* photosreviews section */
+.photosreviews{
+    display: flex;
+}
+.photosreviews img{
+    height: 200px;
+    width:350px;
+    overflow: hidden;
+    
+}
+.reviews{
+    display: flex;
+    margin-top: 10vh;
+    text-align: start;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+.reviews h5{
+color: red;
+}
+.reviews button{
+    width: 200px;
+    color: black;
+    border: 1px solid #777777;
+    border-radius: 0%;
+    background-color: #fff;
+    }
+.reviews > :first-child{
+    padding-left: 100px;
+}
+.learnmore{
+    width: 200px;
+    color: black;
+    border: 1px solid #777777;
+    border-radius: 0%;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    color: #fff;  
+}
+.apstoreplaystore{
+    display: flex;
+    /* set your min height and set max height to auto it will auto adjust your content in div */
+    min-height: 70vh;
+    max-height: auto;
+    text-align: start;
+    padding-left: 60px;
+    padding-right: 0px;
+    padding-top: 40px;
+    min-width: 100.93%;
+    max-width: auto;
+    overflow: hidden;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    justify-content: center;
+align-items: center;
+color: #fff;
+}
+.apstoreplaystore > :nth-child(2) img{
+height: 240px;
+max-width: 540px;
+overflow: hidden;
+
+}
+/* Footer designing start */
+
+footer{
+    min-height: 100vh;
+    max-height: auto;
+    min-width: 100%;
+    max-width: auto;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: #fff;
+    /* padding: 30px; */
+    display: flex;
+}
+.leftfooter{
+    border-right: 1px solid white;
+    margin-top: 20px;
+    width: 70%;
+}
+/* rightfooter */
+
+.rightfooter{
+    text-align: start;
+    padding-left: 5%;
+    padding-right: 0%;
+    margin-top: 30px;
+}
+footer button{
+    width: auto;
+    color: rgb(255, 255, 255);
+    border: 1px solid #777777;
+    border-radius: 0%;
+    padding: 6px;
+    margin-bottom: 10vh;
+    background: transparent;
+    }
+
+footer table{
+    text-align: start;
+    border-collapse: collapse;
+    border: none;
+}
+ footer .playios{
+    height: 50px;
+    width: 140px;
+    padding-left: 10px;
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+}
+.playios img{
+    height: 50px;
+    width: 140px;
+    padding-left: 10px;
+    margin-top: 10px;
+   margin-bottom: 10px;
+}
+.socialicons{
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.socialicons i{
+margin-left: 15px;
+}
+.socialicons > :nth-child(1){
+    color: #1387ec;
+}
+.socialicons > :nth-child(2){
+    color: #ec2513;
+}
+.socialicons > :nth-child(3){
+    color: #b213ec;
+}
+.socialicons > :nth-child(4){
+    color: #1387ec;
+}
+.socialicons > :nth-child(5){
+    color: #1387ec;
+}
+.insidefooter{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1e1818;
+    color: #fff;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Chooseroom styling */
+.carouselparentdiv{
+    display: flex;
+    width: 100%;
+
+}
+.carouseldiv{
+    width: 1000px;
+    padding: 20px 20px 20px 50px;
+}
+.carouseltext{
+    margin-top: 20px;
+    height: 125px;
+  overflow: hidden;
+}
+.carouselbtn button{
+    width: 39%;
+    background-color: orange;
+    color: white;
+    
+}
+.carouselbtn button:hover{
+   color: white;
+    background-color: rgba(255, 166, 0, 0.785);
+    
+}
+#show-more-btn{
+    cursor: pointer;
+    color: #2685c0;
+    font-size: large;
+    font-weight: 400;
+}
+.hr1{
+    width: 90%;
+    color: #1e1818;
+}
+.hr1_parent{
+    display: grid;
+    place-items: center;
+}
+/* modal style */
+.model{
+    background-color: rgba(155, 150, 150, 0.383);
+    width: 80%;
+    display: block;
+}
+.modal{
+    background-color: rgba(155, 150, 150, 0.383);
+}
+.bodyofmodel{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    height: 50vh;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(155, 150, 150, 0.102);;
+}
+  .chooseroomebtn{
+    width: 100px;
+  }
+  /* .sellectbtn{
+    color: orange;
+    border: 1px solid orange;
+  } */
+
+/* diningdiv1 stylingstart */
+.diningmaindiv{
+    display: grid;
+    place-items: center;
+}
+.diningdiv1 h2{
+text-align: center;
+}
+.diningdiv1 p{
+    padding: 0;
+    margin: 0 0 12px;
+    text-align: center;
+    line-height: 1.5;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: "Open Sans","Arial",sans-serif;
+    text-size-adjust: 100%;
+    
+    }
+.inroomdining{
+    display: flex;
+}
+.diningsection2{
+    margin-bottom: 15%;
+}
+.diningsection2 h3{
+    margin-left: 30px;
+}
+
+/* special events page designing start  */
+.specialevents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 50px 60px;
+}
+.specialevents :last-child p,h3{
+    padding-right: 70px;
+}
+.eventsbtn{
+    width: 200px;
+    height: 10vh;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: transparent;
+    text-align: center;
+    color: #535151;
+    border: 1px solid #777777;
+}
+
+
+/* Admin panel styling start */
+.sidebaradmin{
+    background-color: rgba(29, 29, 31, 0.8);
+    width: 100%;
+    height: 100vh;
+    padding: 0%;
+}
+.sidebaradmin ul,li{
+    list-style: none;
+   
+    padding-left: 0%;
+}
+.content-area-admin{
+background-color: #1CB5E0;
+width: 100%;
+height: 100vh;
+padding: 0%;
+
+}
+.adminside{
+    display: flex;
+    padding: 0%;
+}
+.dropbtn {
+    background-color: rgba(249, 249, 255, 0.102);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 18vw;
+    margin-top: 2px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:   rgba(249, 249, 255, 0.202);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+   width: auto;
+   margin-left: -22px;
+   margin-top: 3px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(1, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color:rgba(0,0,0,0.2); color:rgb(22, 11, 11)}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color:  rgba(249, 249, 255, 0.102)}
+
+  /* adminsidebar styling start */
+
+main{
+    width: 100%;
+    /* padding: 20px; */
+    margin-left: 0px;
+}
+.sidebar{
+    background: #000;
+    color: #fff;
+    /* height: 100vh; */
+    /* width: 100%; */
+    transition: all 0.5s;
+}
+.top_section{
+    display: flex;
+    align-items:center;
+    padding:20px 15px;
+}
+.logo{
+    font-size: 30px;
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.link:hover{
+    background:lightskyblue;
+    color: #000;
+    transition: all 0.5s;
+}
+.activesidebar{
+    background: lightskyblue;
+    color: #000;
+}
+.icon, .link_text{
+    font-size: 20px;
+}
+
+/* add rooms styling */
+.formadjustment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radiostyle{
+    display: flex;
+}
+
+.radiostyle .val{
+    margin-left: 20px;
+}
+.formlabel label{
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+}
+/* navbar usericon dropdown css */
+
+  
+
+.usericon{
+    color: rgb(15, 8, 8);
+    margin-left: 20px;
+}
+  
+  .dropdown-content a:hover {background-color: rgba(249, 249, 255, 0.102);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: rgba(249, 249, 255, 0.102);}
+
+  /* chooseroom img */
+  .uirooms{
+    margin-top: 95vh;
+  }
+  
+
+  .sidebar{
+    background-color: #1e1818;
+    min-height: 100vh;
+    max-height: auto;
+  }
+  .sidebaritem li{
+    text-decoration: none;
+background-color: rgba(249, 249, 255, 0.102);
+padding: 10px;
+width: 100%;
+margin-top: 10px;
+  }
+  .sidebaritem li a{
+text-decoration: none;
+color: white;
+  }
+ .roomdetail{
+    display: flex;
+    padding: 50px;
+ }
+ .slectbtn{
+    color: green;
+ }
+ .slectbtn a{
+    text-decoration: none;
+    color: white;
+ }
+ .slectbtn a:hover{
+    color: white;
+ }
+ .logoutbtn{
+    margin-right: 40%;
+ }
