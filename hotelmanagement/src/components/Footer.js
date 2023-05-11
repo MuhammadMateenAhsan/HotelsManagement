@@ -1,6 +1,9 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+    const Navigate = useNavigate();
+    const admin = sessionStorage.getItem("user_email");
+    if(admin != "mohmat646@gmail.com"){
   return (
     <>
     {/* <footer>
@@ -111,6 +114,7 @@ const Footer = () => {
     </div>
     </>
   )
+}
 }
 
 export default Footer

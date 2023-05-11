@@ -120,37 +120,6 @@ console.log(error)
     }
 }
 
-// Send data to Database with image
-// router.postUser("/", upload.single("image"), async (req, res) => {
-// 	try {
-// 		const { title, description,price } = req.body;
-// 		const image = req.file.filename;
-// 		const form = await userModel({ title, description,price, image });
-// 		await form.save();
-// 		res.send(form);
-// 	} catch (error) {
-// 		console.log(error);
-// 	}
-// });
-// const updateUser=async(req,res)=>{
-//     const id = req.params.id;
-//     const update = req.body; // Assumes the update data is in the request body
-// //   the purpose of { new: true } is it update with no-time 
-// try {
-//    let data=await UserModel.findByIdAndUpdate(id,{
-//         name:req.body.name,
-//         email:req.body.email,
-//         city:req.body.city,
-        
-//     }  );
-//     const a=await data()
-//     res.json(a)     
-// } catch (error) {
-//     console.log("error in update ")
-// }
-    
-// }
-
 const updateUser = async (req, res) => {
     const id = req.params.id;
     const update = req.body;
@@ -196,8 +165,6 @@ try {
 } catch (error) {
     res.send(error)
 }
-
-
 
 }
 

@@ -1,50 +1,21 @@
-import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Global } from '../../contextapi/Services';
 
 const Updateemployee = () => {
+  const Navigate = useNavigate();
     let a=useContext(Global);
-    // const { id } = useParams();
-//     const empty={
-//         id: id,
-// name:"",
-// title:"",
-// salary:"",
-// idcard:"",
-// phone:"",
-// email:"",
-// gender:""
-//       }
-//   const Navigate = useNavigate();
+    const goback=()=>{
+      Navigate("/sidebar/showemployee")
+      // alert("helo")
+    }
   
-//   const [handle, setHandle] = useState(empty);
-//   const handler=(e)=>{
-//     const {name,value}=e.target;
-//     setHandle({...handle,[name]:value});
-//   }
-
- // function for updating the Api
-// const handleUpdate=()=>{
-//     if(handle.name === ""  || handle.email === ""  ||handle.title === ""  ||handle.salary === ""  ||handle.idcard === ""  ||handle.phone === ""  ||handle.gender === ""){
-// alert("Please fill the input fields first.")
-//     }else{
-//     fetch(`http://localhost:8000/employee/${id}`,{
-//       method:'PUT',
-//       headers:{
-//         "content-Type": "application/json",
-//        },
-//        body:JSON.stringify(handle)
-      
-//     })
-//     console.log(handle)
-//     setHandle(empty)
-//     Navigate("/sidebar/showemployee")
-//     }
-// }
   return (
     <div className='container'>
-      <h2 className='display-4 richText richtext'>Update Employee Data</h2>
+      <span>
+      <i class="fa fa-arrow-left" aria-hidden="true" style={{cursor:"pointer"}} onClick={goback}></i>
+      <h2 className='display-4 richText richtext'>  Update Employee Data</h2>
+      </span>
       <form
         action=''
         className='mt-4 border p-4 rounded'

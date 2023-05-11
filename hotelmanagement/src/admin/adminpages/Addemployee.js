@@ -15,7 +15,7 @@ gender:""
     if(handle.name=="" || handle.title=="" || handle.email=="" || handle.gender=="" || handle.idcard=="" || handle.phone=="" ||handle.salary==""){
 alert("Please fill the input fields first.")
     }else{
-      let record = await fetch("http://127.0.0.1:8000/addemployee",{
+      let record = await fetch("http://127.0.0.1:8000/employee",{
         method:"POST",
         headers:{
             "content-type" : "application/json"

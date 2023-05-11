@@ -28,7 +28,7 @@ const Updaterooms = () => {
     e.preventDefault();
     axios.put(`http://127.0.0.1:8000/${id}`, obj)
       .then(() => {
-        navigate('/showrooms');
+        navigate('/sidebar');
       });
   };
 

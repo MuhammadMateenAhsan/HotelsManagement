@@ -36,10 +36,11 @@ const Loginsignup = () => {
                 sessionStorage.setItem("user_id",loginrecord.userAlreadyExist._id)
                 sessionStorage.setItem("user_email",loginrecord.userAlreadyExist.email)
                 alert("Login Successfuly")
-                if(sessionStorage.getItem("user_email") === "mohmat646@gmail.com"){
+                let admin = sessionStorage.getItem("user_email")
+                if(admin === "mohmat646@gmail.com"){
                     Navigate("/sidebar")
                 }else{
-                    Navigate("/")
+                    Navigate("/specialevents")
                 }
             }else{
                 alert("error: Email or password is incorrect.")
@@ -85,10 +86,9 @@ alert("user already exist")
       }, []);
   return (
         <>
-        <div className="roomimg">
+        {/* <div className="roomimg">
         <img src="images\loginsignupbg.png" alt="" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover'}} />
-      </div>
-      <div className='uirooms'>
+      </div> */}
     <div className="background"></div>
     <div className="containerSL">
         <div className="item">
@@ -134,7 +134,7 @@ alert("user already exist")
                         <label for=""><input type="checkbox"/>Remember Me</label>
                         <a href="#">Forget Password</a>
                     </div>
-                    <button className="btn signupbtn">LogIn</button>
+                    <button className="btn signupbtn" style={{color:"white", borderColor:"white"}}>LogIn</button>
                     <div className="create-account">
                         <p>Create A New Account? <Link to="#" className="register-link">Sign Up</Link></p>
                     </div>
@@ -170,7 +170,7 @@ alert("user already exist")
                     <div className="remember-password">
                         <label for=""><input type="checkbox"/>I agree with this statment</label>
                     </div>
-                    <button className="btn signupbtn">SignUp</button>
+                    <button className="btn signupbtn" style={{color:"white", borderColor:"white"}}>SignUp</button>
                     <div className="create-account">
                         <p>Already Have An Account? <Link to="#" className="login-link">LogIn</Link></p>
                     </div>
@@ -178,7 +178,7 @@ alert("user already exist")
             </div>
         </div>
     </div>
-    </div>
+    
 </>
   )
 }

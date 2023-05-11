@@ -8,7 +8,7 @@ const connectDB= async ()=>{
     } catch (error) {
         console.log(error)
         process.exit(1) //it helps us to move next from error its save us to stuck in error
+        
     }
 }
-
 module.exports=connectDB

@@ -43,7 +43,7 @@ gender:""
       })
       console.log(handle)
       setHandle(empty)
-      Navigate("/sidebar/showemployee")
+      Navigate("/sidebar")
       }
   }
 

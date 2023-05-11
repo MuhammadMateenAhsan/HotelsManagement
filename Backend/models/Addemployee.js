@@ -28,5 +28,7 @@ const employeescheema=({
         type:String,
         required:true
     },
-})
+}
+
+)
 module.exports = mongoose.model("addemployee",employeescheema)
