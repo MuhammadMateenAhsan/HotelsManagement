@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Loginsignup = () => {
     const Navigate = useNavigate();
@@ -19,7 +21,7 @@ const Loginsignup = () => {
     // Login form function start
     const login = async()=>{
         if(handle.email === "" || handle.password === ""){
-            alert("Please fill the input fields first")
+            toast.error('Please fill the input fields first')
         }else
         
         {
@@ -35,7 +37,7 @@ const Loginsignup = () => {
             if(loginrecord.message == "Login successful"){
                 sessionStorage.setItem("user_id",loginrecord.userAlreadyExist._id)
                 sessionStorage.setItem("user_email",loginrecord.userAlreadyExist.email)
-                alert("Login Successfuly")
+                toast.success('Login Successfuly')
                 let admin = sessionStorage.getItem("user_email")
                 if(admin === "mohmat646@gmail.com"){
                     Navigate("/sidebar")
@@ -43,7 +45,7 @@ const Loginsignup = () => {
                     Navigate("/specialevents")
                 }
             }else{
-                alert("error: Email or password is incorrect.")
+                toast.error('Email or password is incorrect')
             }
         }
         

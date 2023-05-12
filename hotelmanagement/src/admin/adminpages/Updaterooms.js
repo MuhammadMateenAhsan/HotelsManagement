@@ -31,10 +31,16 @@ const Updaterooms = () => {
         navigate('/sidebar');
       });
   };
-
+  const goback=()=>{
+    navigate("/sidebar")
+  }
   return (
     <div className='container'>
+      <span>
+
       <h2 className='display-4 richText richtext'>Update Data</h2>
+      <i class="fa fa-arrow-left" aria-hidden="true" style={{cursor:"pointer"}} onClick={goback}> Back</i>
+      </span>
       <form
         action=''
         className='mt-4 border p-4 rounded'
@@ -50,7 +56,7 @@ const Updaterooms = () => {
           value={obj.title}
         />
 
-        <label htmlFor=''>Email</label>
+        <label htmlFor=''>Price</label>
         <input
           type='text'
           name='price'

@@ -6,15 +6,16 @@ const Updateemployee = () => {
   const Navigate = useNavigate();
     let a=useContext(Global);
     const goback=()=>{
-      Navigate("/sidebar/showemployee")
+      Navigate("/sidebar")
       // alert("helo")
     }
   
   return (
     <div className='container'>
       <span>
-      <i class="fa fa-arrow-left" aria-hidden="true" style={{cursor:"pointer"}} onClick={goback}></i>
-      <h2 className='display-4 richText richtext'>  Update Employee Data</h2>
+      
+      <h2 className='display-4 richText richtext'> Update Employee Data</h2>
+      <i class="fa fa-arrow-left" aria-hidden="true" style={{cursor:"pointer"}} onClick={goback}> Back</i>
       </span>
       <form
         action=''

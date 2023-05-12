@@ -15,7 +15,7 @@ import Services from "./contextapi/Services";
 import Roomdetails from "./components/Pages/Roomdetails";
 // import { useNavigate } from 'react-router-dom';
 import PrivateRouting from "./components/PrivateRouting";
-
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -36,17 +36,9 @@ function App() {
           <Route element={<Loginsignup />} path="/loginsignup" />
         </Routes>
         <Footer />
+        <ToastContainer theme="dark"/>
       </Services>
+      
   );
 }
-// function App2(){
-//   return(
-// <div>
-//     <Routes>
-//     <Route element={<Sidebar />} path="/sidebar/*" />
-//   </Routes>
-// </div>
-//   )
-//   }
   export default App;
-// export {App2};
